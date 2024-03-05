@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: ; */
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(44, 58, 71,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    
+}
+.logo{
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.logo a{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+    gap: 5vw;
+    margin-right: 2vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+.menu ul a{
+    color: white;
+}
+.menu i{
+    font-size: 2vw;
+    color: white;
+    display: none;
+}
+/* navbar done */
+.info{
+    height: 100vh;
+    width: 100vw;
+    background: url(resources/spiti_road.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* gap: 5vh; */
+    color: whitesmoke;
+}
+
+.content{
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2{
+    font-size: 4vmin;
+}
+.line{
+    height: 4px;
+    width: 150px;
+    background-color: crimson;
+    border-radius: 4px;
+    margin: 10px;
+
+}
+.h1{
+    font-size: 7vmin;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background-color: crimson;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.ctn a{
+    color: whitesmoke;
+}
+
+/* section1 */
+section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(203,200,255,1) 84%);
+    padding-bottom: 2vh;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+}
+.title h2{
+    margin-bottom: 1vh;
+}
+.events{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: .3s;
+    padding: 2vh 0;
+}
+.event img{
+    margin-top: 2vh;
+    width: 90%;
+    border-radius: 10px;
+    
+}
+.event h2{
+    margin: 2vh 0;
+}
+.event:hover{
+    transform: scale(1.05);
+    /* box-shadow: ; */
+}
+.event p {
+    padding: 0 5vw;
+    text-align: center;
+}
+.learn_more{
+    padding: 8px 15px;
+    background-color: crimson;
+    border-radius: 30px;
+    margin-top: 2vh;
+}
+.learn_more a{
+    
+    color: whitesmoke;
+}
+@media (max-width: 768px) {
+    body::-webkit-scrollbar {
+        display: none;
+      }
+    .navbar{
+        background: rgba(44, 58, 71,0.3);
+        width: 100vw;
+        height: 10vh;
+        padding: 0 5vw;
+    }
+    .logo{
+        margin-left: 4vw;
+        font-size: 6vw;
+    }
+    .menu ul li{
+        display: none;
+    }
+    .menu i{
+        display: block;
+        font-size: 8vw;
+        margin-right: 3vw;    
+    }
+
+    /* section part */
+    
+    .events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .event{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        /* height: 80vh; */
+        border: 2px solid black;
+        border-radius: 10px;
+        transition: .3s;
+    }
+}
