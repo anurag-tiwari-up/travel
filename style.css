@@ -68,10 +68,11 @@ ul{
 }
 .h2{
     font-size: 4vmin;
+    
 }
 .line{
     height: 4px;
-    width: 150px;
+    width: 180px;
     background-color: crimson;
     border-radius: 4px;
     margin: 10px;
@@ -92,7 +93,7 @@ ul{
 }
 
 /* section1 */
-section{
+.section1{
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -161,6 +162,50 @@ section{
     
     color: whitesmoke;
 }
+
+/* section2 */
+.section2{
+    height: 100vh;
+    width: 100vw;
+    background: url(resources/spiti_budha.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.di{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.di-content{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section2 h1{
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    font-size: 7vmin;
+    font-weight: 600;
+   
+}
+.section2 .line{
+    margin-bottom: 2vw;
+}
+.section2 p{
+    margin-bottom: 2vh;
+}
 @media (max-width: 768px) {
     body::-webkit-scrollbar {
         display: none;
@@ -198,9 +243,35 @@ section{
         justify-content: center;
         align-items: center;
         width: 90%;
-        /* height: 80vh; */
         border: 2px solid black;
         border-radius: 10px;
         transition: .3s;
     }
+    .event:hover{
+        transform: none;
+    }
+
+    /* section2 */
+
+    .section2{
+        background: url(resources/spiti_budha_potrait.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .di{
+        padding: 0 5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .section2 .line{
+        margin-bottom: 2vh;
+    }
+    .section2 p{
+        margin-bottom: 5vw;
+    }
+
 }
